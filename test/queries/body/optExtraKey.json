@@ -1,0 +1,23 @@
+{
+    "title": "opt extra key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNSS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

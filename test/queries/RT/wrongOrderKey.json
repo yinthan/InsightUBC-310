@@ -1,0 +1,15 @@
+{
+    "title": "query that uses invalid key for ORDER",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "ORDER": "courses_none"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

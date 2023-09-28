@@ -1,0 +1,17 @@
+{
+    "title": "OR string",
+    "query": {
+        "WHERE": {
+            "OR": "courses_dept"
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

@@ -1,0 +1,16 @@
+{
+    "title": "body log OR []",
+    "query": {
+        "WHERE": {
+            "OR": []
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

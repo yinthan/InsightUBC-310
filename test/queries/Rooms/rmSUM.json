@@ -1,0 +1,33 @@
+{
+    "title": "rooms - sum",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "s"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "s",
+                    "rooms_fullname"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_fullname"
+            ],
+            "APPLY": [
+                {
+                    "s": {
+                        "SUM": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_fullname":"Buchanan","s":3190},{"rooms_fullname":"Henry Angus","s":1546},{"rooms_fullname":"West Mall Swing Space","s":1421},{"rooms_fullname":"Woodward (Instructional Resources Centre-IRC)","s":1297},{"rooms_fullname":"Neville Scarfe","s":1004},{"rooms_fullname":"Chemistry","s":913},{"rooms_fullname":"Student Recreation Centre","s":897},{"rooms_fullname":"Life Sciences Centre","s":825},{"rooms_fullname":"Orchard Commons","s":662},{"rooms_fullname":"Hennings","s":658},{"rooms_fullname":"Forest Sciences Centre","s":621},{"rooms_fullname":"Geography","s":619},{"rooms_fullname":"Earth Sciences Building","s":580},{"rooms_fullname":"MacMillan","s":573},{"rooms_fullname":"Irving K Barber Learning Centre","s":568},{"rooms_fullname":"Pharmaceutical Sciences Building","s":538},{"rooms_fullname":"Hebb","s":537},{"rooms_fullname":"Robert F. Osborne Centre","s":521},{"rooms_fullname":"Leonard S. Klinck (also known as CSCI)","s":505},{"rooms_fullname":"MacLeod","s":503},{"rooms_fullname":"Mathematics","s":495},{"rooms_fullname":"Hugh Dempster Pavilion","s":440},{"rooms_fullname":"Wesbrook","s":427},{"rooms_fullname":"Centre for Interactive  Research on Sustainability","s":426},{"rooms_fullname":"Chemical and Biological Engineering Building","s":354},{"rooms_fullname":"Biological Sciences","s":336},{"rooms_fullname":"Frederic Lasserre","s":325},{"rooms_fullname":"Civil and Mechanical Engineering","s":289},{"rooms_fullname":"Food, Nutrition and Health","s":263},{"rooms_fullname":"Ponderosa Commons: Oak House","s":240},{"rooms_fullname":"Allard Hall (LAW)","s":228},{"rooms_fullname":"Jack Bell Building for the School of Social Work","s":201},{"rooms_fullname":"Anthropology and Sociology","s":186},{"rooms_fullname":"School of Population and Public Health","s":166},{"rooms_fullname":"The Leon and Thea Koerner University Centre","s":163},{"rooms_fullname":"Friedman Building","s":160},{"rooms_fullname":"Iona Building","s":150},{"rooms_fullname":"Aquatic Ecosystems Research Laboratory","s":144},{"rooms_fullname":"Frank Forward","s":142},{"rooms_fullname":"Mathematics Annex","s":106},{"rooms_fullname":"Brock Hall Annex","s":94},{"rooms_fullname":"War Memorial Gymnasium","s":65},{"rooms_fullname":"Earth and Ocean Sciences - Main","s":50},{"rooms_fullname":"Auditorium Annex","s":41}]
+}

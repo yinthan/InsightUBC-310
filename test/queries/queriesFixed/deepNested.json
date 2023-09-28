@@ -1,0 +1,88 @@
+{
+    "title": "nested deep",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "AND": [
+                        {
+                            "AND": [
+                                {
+                                    "OR": [
+                                        {
+                                            "AND": [
+                                                {
+                                                    "IS": {
+                                                        "courses_dept": "elec"
+                                                    }
+                                                },
+                                                {
+                                                    "LT": {
+                                                        "courses_fail": 3
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "IS": {
+                                                "courses_dept": "elec"
+                                            }
+                                        },
+                                        {
+                                            "IS": {
+                                                "courses_id": "465"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "IS": {
+                                        "courses_title": "microsys design"
+                                    }
+                                },
+                                {
+                                    "IS": {
+                                        "courses_id": "465"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "elec"
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_avg": 52
+                            }
+                        }
+                    ]
+                },
+                {
+                    "IS": {
+                        "courses_dept": "elec"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "elec"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_year",
+                "courses_dept",
+                "courses_avg",
+                "courses_id",
+                "courses_title",
+                "courses_fail",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_year":2015,"courses_dept":"elec","courses_avg":52.67,"courses_id":"465","courses_title":"microsys design","courses_fail":2,"courses_uuid":"30948"},{"courses_year":1900,"courses_dept":"elec","courses_avg":52.67,"courses_id":"465","courses_title":"microsys design","courses_fail":2,"courses_uuid":"30949"}]}

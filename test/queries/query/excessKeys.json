@@ -1,0 +1,24 @@
+{
+    "title": "excess keys",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        },
+        "where": {
+            "GT": {
+                "courses_avg":97
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

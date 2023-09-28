@@ -1,0 +1,17 @@
+{
+    "title": "not null",
+    "query": {
+        "WHERE": {
+            "NOT": null
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

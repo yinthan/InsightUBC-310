@@ -1,0 +1,81 @@
+{
+    "title": "rooms - count",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_fullname": "Buchanan"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "counts",
+                "min"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "counts",
+                    "rooms_fullname",
+                    "min"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_fullname",
+                "rooms_furniture"
+            ],
+            "APPLY": [
+                {
+                    "counts": {
+                        "COUNT": "rooms_lon"
+                    }
+                },
+                {
+                    "min": {
+                        "MIN": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 131
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 108
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 65
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 56
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 30
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 22
+        },
+        {
+            "rooms_fullname": "Buchanan",
+            "counts": 1,
+            "min": 18
+        }
+    ]
+}

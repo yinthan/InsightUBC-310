@@ -1,0 +1,42 @@
+{
+    "title": "OR [a, b, c]",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                            "GT": {
+                                "courses_pass": 25
+                            }
+                        },
+                        {
+                            "EQ": {
+                                "courses_avg": 97.33
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "math"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "IS": {
+                        "courses_uuid": "96262"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"nurs","courses_instructor":""}]
+}

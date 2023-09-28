@@ -1,0 +1,43 @@
+{
+    "title": "string with only one *",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "EQ": {
+                                "courses_avg": 90.02
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_id": "329"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 200
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{ "courses_dept": "adhe", "courses_id": "329", "courses_avg": 90.02 }]
+}

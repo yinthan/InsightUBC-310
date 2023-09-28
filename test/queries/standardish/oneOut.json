@@ -1,0 +1,36 @@
+{
+    "title": "one out",
+    "query": {
+        "WHERE": {
+            "AND":[
+                {
+                    "GT": {
+                        "courses_avg":96
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept":"adhe"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id":"329"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        { "courses_dept": "adhe", "courses_id": "329", "courses_avg": 96.11 }
+    ]
+}

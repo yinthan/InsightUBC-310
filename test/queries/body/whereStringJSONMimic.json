@@ -1,0 +1,15 @@
+{
+    "title": "where (string mimic)",
+    "query": {
+        "WHERE": "{\n            \"GT\": {\n                \"courses_avg\":97\n            }\n        }",
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

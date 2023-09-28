@@ -1,0 +1,13 @@
+{
+    "title": "options string JSON mimic",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": "{\n            \"COLUMNS\": [\n                \"courses_avg\"\n            ]\n        }"
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

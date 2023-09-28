@@ -1,0 +1,28 @@
+{
+    "title": "rooms - count",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_fullname": "Buchanan"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms_seats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_seats"
+            ],
+            "APPLY": []
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_seats":275},{"rooms_seats":181},{"rooms_seats":150},{"rooms_seats":131},{"rooms_seats":108},{"rooms_seats":78},{"rooms_seats":65},{"rooms_seats":56},{"rooms_seats":50},{"rooms_seats":48},{"rooms_seats":42},{"rooms_seats":40},{"rooms_seats":32},{"rooms_seats":31},{"rooms_seats":30},{"rooms_seats":26},{"rooms_seats":24},{"rooms_seats":22},{"rooms_seats":18}]}

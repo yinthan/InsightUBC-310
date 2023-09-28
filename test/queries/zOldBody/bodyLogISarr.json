@@ -1,0 +1,16 @@
+{
+    "title": "body log IS []",
+    "query": {
+        "WHERE": {
+            "IS": []
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

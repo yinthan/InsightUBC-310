@@ -1,0 +1,21 @@
+{
+    "title": "order before col",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99.77
+            }
+        },
+        "OPTIONS": {
+            "ORDER": "courses_avg",
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        { "courses_avg": 99.78 },
+        { "courses_avg": 99.78 }
+    ]
+}

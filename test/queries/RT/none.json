@@ -1,0 +1,20 @@
+{
+    "title": "query that gives none",
+    "query": {
+        "WHERE":{
+            "GT":{
+                "courses_avg":200
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

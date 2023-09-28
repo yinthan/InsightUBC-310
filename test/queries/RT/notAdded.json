@@ -1,0 +1,20 @@
+{
+    "title": "query that references a dataset not added",
+    "query": {
+        "WHERE":{
+            "GT":{
+                "none_avg":90
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "none_dept",
+                "none_id",
+                "none_avg"
+            ],
+            "ORDER": "none_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "NotFoundError"
+}

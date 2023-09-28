@@ -1,0 +1,16 @@
+{
+    "title": "body log IS {}",
+    "query": {
+        "WHERE": {
+            "IS": {}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

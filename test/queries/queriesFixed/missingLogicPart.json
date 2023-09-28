@@ -1,0 +1,40 @@
+{
+    "title": "only one filter is inside LOGIC AND",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND":[
+                        {
+                            "AND": [{
+                                "GT": {
+                                    "courses_avg":90
+                                }
+                            }]
+                        },
+                        {
+                            "IS": {
+                                "courses_dept":"adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg":95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"econ","courses_uuid":"10016","courses_id":"516","courses_avg":95},{"courses_dept":"econ","courses_uuid":"10017","courses_id":"516","courses_avg":95},{"courses_dept":"rhsc","courses_uuid":"10582","courses_id":"501","courses_avg":95},{"courses_dept":"cpsc","courses_uuid":"1385","courses_id":"589","courses_avg":95},{"courses_dept":"cpsc","courses_uuid":"1386","courses_id":"589","courses_avg":95},{"courses_dept":"edcp","courses_uuid":"16690","courses_id":"473","courses_avg":95},{"courses_dept":"edcp","courses_uuid":"16691","courses_id":"473","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"19182","courses_id":"329","courses_avg":93.33},{"courses_dept":"adhe","courses_uuid":"19184","courses_id":"329","courses_avg":90.02},{"courses_dept":"adhe","courses_uuid":"19187","courses_id":"330","courses_avg":91.29},{"courses_dept":"musc","courses_uuid":"19490","courses_id":"553","courses_avg":95},{"courses_dept":"musc","courses_uuid":"19491","courses_id":"553","courses_avg":95},{"courses_dept":"crwr","courses_uuid":"26257","courses_id":"599","courses_avg":95},{"courses_dept":"mtrl","courses_uuid":"2676","courses_id":"599","courses_avg":95},{"courses_dept":"cnps","courses_uuid":"28349","courses_id":"535","courses_avg":95},{"courses_dept":"cnps","courses_uuid":"28350","courses_id":"535","courses_avg":95},{"courses_dept":"musc","courses_uuid":"28877","courses_id":"553","courses_avg":95},{"courses_dept":"musc","courses_uuid":"28878","courses_id":"553","courses_avg":95},{"courses_dept":"math","courses_uuid":"29971","courses_id":"532","courses_avg":95},{"courses_dept":"math","courses_uuid":"29972","courses_id":"532","courses_avg":95},{"courses_dept":"bmeg","courses_uuid":"43501","courses_id":"597","courses_avg":95},{"courses_dept":"bmeg","courses_uuid":"43502","courses_id":"597","courses_avg":95},{"courses_dept":"crwr","courses_uuid":"46406","courses_id":"599","courses_avg":95},{"courses_dept":"crwr","courses_uuid":"46407","courses_id":"599","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"46423","courses_id":"330","courses_avg":91.48},{"courses_dept":"adhe","courses_uuid":"46425","courses_id":"330","courses_avg":90.85},{"courses_dept":"mtrl","courses_uuid":"49773","courses_id":"564","courses_avg":95},{"courses_dept":"mtrl","courses_uuid":"49774","courses_id":"564","courses_avg":95},{"courses_dept":"kin","courses_uuid":"59530","courses_id":"500","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"68539","courses_id":"329","courses_avg":96.11},{"courses_dept":"adhe","courses_uuid":"68540","courses_id":"329","courses_avg":92.54},{"courses_dept":"adhe","courses_uuid":"68543","courses_id":"329","courses_avg":90.82},{"courses_dept":"adhe","courses_uuid":"68557","courses_id":"412","courses_avg":90.16},{"courses_dept":"crwr","courses_uuid":"71171","courses_id":"599","courses_avg":95},{"courses_dept":"kin","courses_uuid":"72706","courses_id":"499","courses_avg":95},{"courses_dept":"crwr","courses_uuid":"75158","courses_id":"599","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"75628","courses_id":"330","courses_avg":90.17},{"courses_dept":"epse","courses_uuid":"76362","courses_id":"606","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"78875","courses_id":"412","courses_avg":90.18},{"courses_dept":"adhe","courses_uuid":"79479","courses_id":"330","courses_avg":90.5},{"courses_dept":"crwr","courses_uuid":"81354","courses_id":"599","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"85074","courses_id":"330","courses_avg":91.33},{"courses_dept":"adhe","courses_uuid":"85075","courses_id":"330","courses_avg":91.33},{"courses_dept":"kin","courses_uuid":"86831","courses_id":"500","courses_avg":95},{"courses_dept":"epse","courses_uuid":"86974","courses_id":"682","courses_avg":95},{"courses_dept":"epse","courses_uuid":"86975","courses_id":"682","courses_avg":95},{"courses_dept":"sowk","courses_uuid":"88881","courses_id":"570","courses_avg":95},{"courses_dept":"adhe","courses_uuid":"91932","courses_id":"330","courses_avg":90.72},{"courses_dept":"crwr","courses_uuid":"92881","courses_id":"599","courses_avg":95},{"courses_dept":"musc","courses_uuid":"93963","courses_id":"553","courses_avg":95},{"courses_dept":"musc","courses_uuid":"93964","courses_id":"553","courses_avg":95},{"courses_dept":"psyc","courses_uuid":"94900","courses_id":"501","courses_avg":95},{"courses_dept":"psyc","courses_uuid":"94901","courses_id":"501","courses_avg":95},{"courses_dept":"nurs","courses_uuid":"96195","courses_id":"424","courses_avg":95},{"courses_dept":"nurs","courses_uuid":"96196","courses_id":"424","courses_avg":95},{"courses_dept":"obst","courses_uuid":"98843","courses_id":"549","courses_avg":95}]}

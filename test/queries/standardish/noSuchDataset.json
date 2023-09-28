@@ -1,0 +1,19 @@
+{
+    "title": "no such dataset",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "coursesX_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesX_dept",
+                "coursesX_avg"
+            ],
+            "ORDER": "coursesX_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+    "title": "order null",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99.77
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_id"
+            ],
+            "ORDER": null
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,13 @@
+{
+    "title": "options number",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": 4
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

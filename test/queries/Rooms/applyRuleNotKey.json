@@ -1,0 +1,33 @@
+{
+    "title": "rooms - sum",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "s"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "s",
+                    "rooms_fullname"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_fullname"
+            ],
+            "APPLY": [
+                {
+                    "s": {
+                        "HAHA": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

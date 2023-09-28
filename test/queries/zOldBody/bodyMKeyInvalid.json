@@ -1,0 +1,20 @@
+{
+    "title": "LT courses_invalid 60",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_invalid": 60
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

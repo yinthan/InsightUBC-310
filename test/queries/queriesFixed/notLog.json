@@ -1,0 +1,40 @@
+{
+    "title": "not OR",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "adhe"
+                    }
+                },
+                {
+                    "NOT": {
+                        "OR": [
+                            {
+                                "LT": {
+                                    "courses_avg": 90
+                                }
+                            },
+                            {
+                                "LT": {
+                                    "courses_year": 2015
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_year",
+                "courses_avg"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"adhe","courses_uuid":"19182","courses_year":2016,"courses_avg":93.33},{"courses_dept":"adhe","courses_uuid":"19187","courses_year":2016,"courses_avg":91.29},{"courses_dept":"adhe","courses_uuid":"68539","courses_year":2015,"courses_avg":96.11},{"courses_dept":"adhe","courses_uuid":"68540","courses_year":2015,"courses_avg":92.54},{"courses_dept":"adhe","courses_uuid":"68543","courses_year":2015,"courses_avg":90.82},{"courses_dept":"adhe","courses_uuid":"68557","courses_year":2015,"courses_avg":90.16}]}

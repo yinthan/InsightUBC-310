@@ -1,0 +1,22 @@
+{
+    "title": "more than one filter in where without any connector",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            },
+            "LT": {
+                "courses_avg":99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

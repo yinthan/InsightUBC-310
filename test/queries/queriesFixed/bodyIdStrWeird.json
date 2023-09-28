@@ -1,0 +1,20 @@
+{
+    "title": "◕好n@#$%\n^&*\n[]\n{}+=-~`'0\n\r--lolButValid as dataset id",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "◕好n@#$%\n^&*\n[]\n{}+=-~`'0\n\r--lolButValid_uuid": "17899"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "◕好n@#$%\n^&*\n[]\n{}+=-~`'0\n\r--lolButValid_uuid"
+            ],
+            "ORDER": "◕好n@#$%\n^&*\n[]\n{}+=-~`'0\n\r--lolButValid_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {"◕好n@#$%\n^&*\n[]\n{}+=-~`'0\n\r--lolButValid_uuid": "17899"}
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "title": "query that in incorrect format, wrong filter, using mkey in sComparison",
+    "query": {
+        "WHERE":{
+            "IS":{
+                "courses_dept":null
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

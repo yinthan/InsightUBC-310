@@ -1,0 +1,24 @@
+{
+    "title": "WHERE, OPTIONS, WHERE",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        },
+        "WHERE": {
+            "LT": {
+                "courses_avg":99
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

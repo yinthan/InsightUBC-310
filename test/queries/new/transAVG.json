@@ -1,0 +1,30 @@
+{
+    "title": "group avg",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "b*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "courses_avg"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"ba","overallAvg":82.02},{"courses_dept":"baac","overallAvg":80.26},{"courses_dept":"babs","overallAvg":82.46},{"courses_dept":"baen","overallAvg":82.54},{"courses_dept":"bafi","overallAvg":82.79},{"courses_dept":"bahr","overallAvg":81.34},{"courses_dept":"bait","overallAvg":83.04},{"courses_dept":"bala","overallAvg":77.05},{"courses_dept":"bama","overallAvg":81.92},{"courses_dept":"bams","overallAvg":82.78},{"courses_dept":"bapa","overallAvg":81.4},{"courses_dept":"basc","overallAvg":81.25},{"courses_dept":"basm","overallAvg":82.55},{"courses_dept":"baul","overallAvg":82.67},{"courses_dept":"bioc","overallAvg":77.9},{"courses_dept":"biof","overallAvg":89.77},{"courses_dept":"biol","overallAvg":75.99},{"courses_dept":"bmeg","overallAvg":84.83},{"courses_dept":"bota","overallAvg":87.4},{"courses_dept":"busi","overallAvg":70.63}]
+}

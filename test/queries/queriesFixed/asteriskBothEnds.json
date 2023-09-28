@@ -1,0 +1,33 @@
+{
+    "title": "asterisk at the end",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 93
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*dh*"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_uuid",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"adhe","courses_uuid":"19182","courses_id":"329","courses_avg":93.33},{"courses_dept":"dhyg","courses_uuid":"3316","courses_id":"412","courses_avg":93.72},{"courses_dept":"dhyg","courses_uuid":"4900","courses_id":"412","courses_avg":93.58},{"courses_dept":"adhe","courses_uuid":"68539","courses_id":"329","courses_avg":96.11}]}

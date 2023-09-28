@@ -1,0 +1,86 @@
+{
+    "title": "RT: most complex",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "OR": [
+                        {
+                            "AND": [
+                                {
+                                    "IS": {
+                                        "courses_dept": "adhe"
+                                    }
+                                },
+                                {
+                                    "AND": [
+                                        {
+                                            "LT": {
+                                                "courses_avg": 95
+                                            }
+                                        },
+                                        {
+                                            "NOT": {
+                                                "OR": [
+                                                    {
+                                                        "AND": [
+                                                            {
+                                                                "GT": {
+                                                                    "courses_avg": 50
+                                                                }
+                                                            },
+                                                            {
+                                                                "IS": {
+                                                                    "courses_dept": "adhe"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "EQ": {
+                                                            "courses_avg": 97
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "IS": {
+                                "courses_id": "329"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 64.43
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_title",
+                "courses_pass"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_avg": 64.43,
+            "courses_dept": "busi",
+            "courses_id": "329",
+            "courses_pass": 6,
+            "courses_title": "organiztl bhvr"
+        }
+    ]
+}

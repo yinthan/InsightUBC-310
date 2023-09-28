@@ -1,0 +1,27 @@
+{
+    "title": "rooms - single out",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_href": "http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ANGU-037"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_shortname",
+                "rooms_number",
+                "rooms_name",
+                "rooms_address",
+                "rooms_lat",
+                "rooms_lon",
+                "rooms_seats",
+                "rooms_type",
+                "rooms_furniture",
+                "rooms_href"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_fullname":"Henry Angus","rooms_shortname":"ANGU","rooms_number":"037","rooms_name":"ANGU_037","rooms_address":"2053 Main Mall","rooms_lat":49.26486,"rooms_lon":-123.25364,"rooms_seats":54,"rooms_type":"Case Style","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ANGU-037"}]
+}

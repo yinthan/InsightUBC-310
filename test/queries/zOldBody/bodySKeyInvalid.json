@@ -1,0 +1,20 @@
+{
+    "title": "IS courses_invalid: \"adhe\"",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_invalid": "adhe"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

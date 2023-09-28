@@ -1,0 +1,20 @@
+{
+    "title": "query that in incorrect format, wrong filter, using skey in mComparison",
+    "query": {
+        "WHERE":{
+            "LT":{
+                "courses_dept":"adhe"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

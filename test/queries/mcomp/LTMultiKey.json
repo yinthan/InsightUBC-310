@@ -1,0 +1,20 @@
+{
+    "title": "LT {a, b}",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 97,
+                "courses_audit": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}

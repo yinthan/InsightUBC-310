@@ -1,0 +1,25 @@
+{
+    "title": "rooms - sum",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms_fullname"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_fullname"
+            ],
+            "APPLY": []
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_fullname":"Woodward (Instructional Resources Centre-IRC)"},{"rooms_fullname":"West Mall Swing Space"},{"rooms_fullname":"Wesbrook"},{"rooms_fullname":"War Memorial Gymnasium"},{"rooms_fullname":"The Leon and Thea Koerner University Centre"},{"rooms_fullname":"Student Recreation Centre"},{"rooms_fullname":"School of Population and Public Health"},{"rooms_fullname":"Robert F. Osborne Centre"},{"rooms_fullname":"Ponderosa Commons: Oak House"},{"rooms_fullname":"Pharmaceutical Sciences Building"},{"rooms_fullname":"Orchard Commons"},{"rooms_fullname":"Neville Scarfe"},{"rooms_fullname":"Mathematics Annex"},{"rooms_fullname":"Mathematics"},{"rooms_fullname":"MacMillan"},{"rooms_fullname":"MacLeod"},{"rooms_fullname":"Life Sciences Centre"},{"rooms_fullname":"Leonard S. Klinck (also known as CSCI)"},{"rooms_fullname":"Jack Bell Building for the School of Social Work"},{"rooms_fullname":"Irving K Barber Learning Centre"},{"rooms_fullname":"Iona Building"},{"rooms_fullname":"Hugh Dempster Pavilion"},{"rooms_fullname":"Henry Angus"},{"rooms_fullname":"Hennings"},{"rooms_fullname":"Hebb"},{"rooms_fullname":"Geography"},{"rooms_fullname":"Friedman Building"},{"rooms_fullname":"Frederic Lasserre"},{"rooms_fullname":"Frank Forward"},{"rooms_fullname":"Forest Sciences Centre"},{"rooms_fullname":"Food, Nutrition and Health"},{"rooms_fullname":"Earth and Ocean Sciences - Main"},{"rooms_fullname":"Earth Sciences Building"},{"rooms_fullname":"Civil and Mechanical Engineering"},{"rooms_fullname":"Chemistry"},{"rooms_fullname":"Chemical and Biological Engineering Building"},{"rooms_fullname":"Centre for Interactive  Research on Sustainability"},{"rooms_fullname":"Buchanan"},{"rooms_fullname":"Brock Hall Annex"},{"rooms_fullname":"Biological Sciences"},{"rooms_fullname":"Auditorium Annex"},{"rooms_fullname":"Aquatic Ecosystems Research Laboratory"},{"rooms_fullname":"Anthropology and Sociology"},{"rooms_fullname":"Allard Hall (LAW)"}]
+}

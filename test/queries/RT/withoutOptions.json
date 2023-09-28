@@ -1,0 +1,13 @@
+{
+    "title": "a query without OPTIONS",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "NotFoundError"
+
+}

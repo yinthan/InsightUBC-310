@@ -1,0 +1,18 @@
+{
+    "title": "body Mcomp GT 999999999999999999",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 999999999999999999
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

@@ -1,0 +1,34 @@
+{
+    "title": "asterisk (*) in middle of input string",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 85.89
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "4*4"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "a*i"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

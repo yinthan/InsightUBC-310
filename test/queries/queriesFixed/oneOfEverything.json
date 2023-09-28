@@ -1,0 +1,106 @@
+{
+    "title": "one of everything? - shuffled output order",
+    "query":{
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "OR": [
+                                {
+                                    "AND": [
+                                        {
+                                            "NOT": {
+                                                "LT": {
+                                                    "courses_avg": 95
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "IS": {
+                                                "courses_dept": "c*"
+                                            }
+                                        },
+                                        {
+                                            "NOT": {
+                                                "EQ": {
+                                                    "courses_audit": 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "AND": [
+                                        {
+                                            "EQ": {
+                                                "courses_year": 2015
+                                            }
+                                        },
+                                        {
+                                            "AND": [
+                                                {
+                                                    "IS": {
+                                                        "courses_id": "3*"
+                                                    }
+                                                },
+                                                {
+                                                    "GT": {
+                                                        "courses_pass": 225
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "NOT": {
+                                "IS": {
+                                    "courses_instructor": ""
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "LT": {
+                                "courses_fail": 10
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_uuid": "11629"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "IS": {
+                        "courses_title": "gndr sex crt rce"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":69.65,"courses_pass":282,"courses_fail":29,"courses_audit":0,"courses_year":2015,"courses_dept":"caps","courses_id":"301","courses_instructor":"kwok, yin nam kenny","courses_title":"human physiology","courses_uuid":"11365"},{"courses_avg":74.7,"courses_pass":364,"courses_fail":5,"courses_audit":0,"courses_year":2015,"courses_dept":"caps","courses_id":"390","courses_instructor":"kopp, janel;loewen, christopher;moukhles, hakima;o'connor, timothy;roskelley, calvin;tanentzapf, guy;viau, victor","courses_title":"intr mcr hum ant","courses_uuid":"11369"},{"courses_avg":69.71,"courses_pass":402,"courses_fail":29,"courses_audit":0,"courses_year":2015,"courses_dept":"caps","courses_id":"391","courses_instructor":"alimohammadi, majid","courses_title":"intr grs hum ant","courses_uuid":"11371"},{"courses_avg":80.25,"courses_pass":4,"courses_fail":0,"courses_audit":0,"courses_year":2014,"courses_dept":"econ","courses_id":"557","courses_instructor":"swiecki, tomasz","courses_title":"emp tpc intl ecn","courses_uuid":"11629"},{"courses_avg":86,"courses_pass":12,"courses_fail":0,"courses_audit":2,"courses_year":2013,"courses_dept":"grsj","courses_id":"502","courses_instructor":"gunew, sneja","courses_title":"gndr sex crt rce","courses_uuid":"15490"},{"courses_avg":86,"courses_pass":12,"courses_fail":0,"courses_audit":2,"courses_year":1900,"courses_dept":"grsj","courses_id":"502","courses_instructor":"","courses_title":"gndr sex crt rce","courses_uuid":"15491"},{"courses_avg":95,"courses_pass":4,"courses_fail":0,"courses_audit":1,"courses_year":2016,"courses_dept":"cnps","courses_id":"535","courses_instructor":"schultz, izabela","courses_title":"adlt psychpathlg","courses_uuid":"28349"},{"courses_avg":75.34,"courses_pass":261,"courses_fail":10,"courses_audit":1,"courses_year":2015,"courses_dept":"biol","courses_id":"300","courses_instructor":"conte, gina","courses_title":"fund of biostats","courses_uuid":"55095"},{"courses_avg":76.36,"courses_pass":243,"courses_fail":3,"courses_audit":0,"courses_year":2015,"courses_dept":"biol","courses_id":"325","courses_instructor":"matthews, philip","courses_title":"intro anml mech","courses_uuid":"55114"},{"courses_avg":90,"courses_pass":2,"courses_fail":0,"courses_audit":2,"courses_year":2014,"courses_dept":"grsj","courses_id":"502","courses_instructor":"al-kassim, dina","courses_title":"gndr sex crt rce","courses_uuid":"73279"},{"courses_avg":90,"courses_pass":2,"courses_fail":0,"courses_audit":2,"courses_year":1900,"courses_dept":"grsj","courses_id":"502","courses_instructor":"","courses_title":"gndr sex crt rce","courses_uuid":"73280"},{"courses_avg":86.1,"courses_pass":20,"courses_fail":0,"courses_audit":0,"courses_year":2015,"courses_dept":"grsj","courses_id":"502","courses_instructor":"thobani, sunera","courses_title":"gndr sex crt rce","courses_uuid":"8186"},{"courses_avg":86.1,"courses_pass":20,"courses_fail":0,"courses_audit":0,"courses_year":1900,"courses_dept":"grsj","courses_id":"502","courses_instructor":"","courses_title":"gndr sex crt rce","courses_uuid":"8187"},{"courses_avg":96.27,"courses_pass":15,"courses_fail":0,"courses_audit":1,"courses_year":2012,"courses_dept":"civl","courses_id":"508","courses_instructor":"ventura, carlos estuardo","courses_title":"dynam struct 2","courses_uuid":"84887"},{"courses_avg":81.15,"courses_pass":229,"courses_fail":3,"courses_audit":0,"courses_year":2015,"courses_dept":"micb","courses_id":"306","courses_instructor":"jean, francois;krebs, danielle","courses_title":"molecul virology","courses_uuid":"93655"}]
+}

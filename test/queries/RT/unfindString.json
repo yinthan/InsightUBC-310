@@ -1,0 +1,20 @@
+{
+    "title": "can't find string",
+    "query": {
+        "WHERE":{
+            "IS":{
+                "courses_dept": "qwe"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

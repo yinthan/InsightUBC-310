@@ -1,0 +1,26 @@
+{
+    "title": "should work with other dataset",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "coursesOne_uuid": "17899"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesOne_dept",
+                "coursesOne_uuid",
+                "coursesOne_avg"
+            ],
+            "ORDER": "coursesOne_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "coursesOne_dept": "chem",
+            "coursesOne_uuid": "17899",
+            "coursesOne_avg": 66.11
+        }
+    ]
+}

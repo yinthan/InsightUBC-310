@@ -1,0 +1,20 @@
+{
+    "title": "IS many keys",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "adhe",
+                "courses_id": "400"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "insightError"
+}
